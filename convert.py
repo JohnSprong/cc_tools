@@ -1,14 +1,24 @@
 import cc_dat_utils
+import json
+import test_json_utils
+
+
 
 #Part 1
 #Use cc_data_utils.make_cc_data_from_dat() to load pfgd_test.dat
 #print the resulting data
 
+print(cc_dat_utils.make_cc_data_from_dat("data/pfgd_test.dat"))
 
 #Part 2
 input_json_file = "data/test_data.json"
 
+
 ### Begin Add Code Here ###
+file = open(input_json_file)
+json_data = json.load(file)
+game_library_data = test_json_utils.make_game_library_from_json(json_data)
+print (game_library_data)
 #Open the file specified by input_json_file
 #Use the json module to load the data from the file
 #Use make_game_library_from_json(json_data) to convert the data to GameLibrary data
