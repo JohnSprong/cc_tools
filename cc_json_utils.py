@@ -31,7 +31,7 @@ def make_cc_data_from_json(json_file): #convert json data into CC data
                 password = json_field["password"]
                 cc_Encoded_Password_Field = cc_data.CCEncodedPasswordField(password)
                 cc_level.add_field(cc_Encoded_Password_Field)
-            # Handles monster movement field
+            
             elif (field_type == "monsters"):
                 json_monster_list = json_field["monsters"]
                 monsters = []
