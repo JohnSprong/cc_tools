@@ -19,7 +19,7 @@ def make_game_library_from_json( json_data ):
         gameplatform.name = game_data["platform"]["name"]
         gameobject.platform = gameplatform
         game_library.add_game(gameobject)
-        # We're done making and adding all the kids, so return the finished Family
+
 
     #Loop through the json_data
         #Create a new Game object from the json_data by reading
