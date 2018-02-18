@@ -75,7 +75,7 @@
     "fields":[
       {
         "type": "title",
-        "title": "Level the Second"
+        "title": "Level the First"
       },
       {
         "type": "password",
@@ -168,7 +168,7 @@
     "fields":[
       {
         "type": "title",
-        "title": "Level the First"
+        "title": "Level the Second"
       },
       {
         "type": "password",
